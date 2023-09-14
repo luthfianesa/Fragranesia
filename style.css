@@ -59,6 +59,10 @@ nav {
   /* border: 1px solid; */
 }
 
+.nav-link a h4:hover {
+  color: #faac37;
+}
+
 .navbar-header-background {
   background-image: url("assets/header-background.png");
   background-repeat: no-repeat;
@@ -68,21 +72,6 @@ nav {
 }
 
 /* Header */
-header {
-  /* width: 100%; */
-  /* margin-bottom: -360px; */
-  /* padding-bottom: 1130px; */
-  /* border: 1px solid; */
-}
-
-/* header img {
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  bottom: 350px;
-  left: -2px;
-} */
-
 .heading-container {
   padding-top: 160px;
   padding-left: 80px;
@@ -102,7 +91,7 @@ header {
   /* border: 1px solid; */
 }
 
-button {
+.heading-container button {
   background-color: #000;
   color: #fff;
   font-size: 25px;
@@ -113,6 +102,11 @@ button {
   margin-top: 30px;
   cursor: pointer;
   border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.heading-container button:hover {
+  border: 1px solid #fff;
 }
 
 /* Tentang Kami */
@@ -224,6 +218,7 @@ button {
   margin-right: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   /* border: 1px solid white; */
 }
 
@@ -282,11 +277,21 @@ button {
 
 .text-and-button button {
   background-color: #faac37;
+  font-weight: 300;
+  font-size: 20px;
+  width: 200px;
+  margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
-  font-size: 20px;
-  font-weight: 300;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.text-and-button button:hover {
+  background-color: #fff;
+  color: #faac37;
+  width: 200px;
 }
 
 footer {
@@ -335,6 +340,10 @@ footer {
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
+}
+
+.footer-nav a:hover {
+  color: #faac37;
 }
 
 .footer-socmed {

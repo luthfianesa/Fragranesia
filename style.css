@@ -29,6 +29,10 @@ nav {
   /* border: 1px solid; */
 }
 
+.nav-logo-container a {
+  text-decoration: none;
+}
+
 .nav-link-container h4 {
 }
 
@@ -71,6 +75,47 @@ nav {
   /* border: 1px solid red; */
 }
 
+/* Navbar Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  nav {
+    padding-left: 0;
+    padding-right: 10px !important;
+    /* border: 1px solid; */
+  }
+
+  .nav-link-container {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Medium Phone */
+@media screen and (max-width: 480px) {
+  nav {
+    padding-left: 0;
+    padding-right: 10px;
+    /* border: 1px solid; */
+  }
+
+  .nav-link-container {
+    flex-direction: column;
+    align-items: flex-end;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Large Phone or Phablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav-link-container {
+    flex-direction: column;
+    align-items: flex-end;
+    /* border: 1px solid; */
+  }
+}
+
 /* Header */
 .heading-container {
   padding-top: 160px;
@@ -79,6 +124,7 @@ nav {
 
 .heading-container h1 {
   color: #fff;
+  text-shadow: 2px 2px #000;
 }
 
 .heading-container h2 {
@@ -87,7 +133,9 @@ nav {
   font-weight: 500;
   width: 400px;
   margin-top: 20px;
-  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  text-shadow: 2px 2px #000;
+  /* Figma */
+  /* box-shadow: 0px 4px 4px 0px #00000040 inset; */
   /* border: 1px solid; */
 }
 
@@ -107,6 +155,56 @@ nav {
 
 .heading-container button:hover {
   border: 1px solid #fff;
+}
+
+/* Header Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  .heading-container {
+    padding-top: 70px !important;
+  }
+
+  .heading-container h1 {
+    width: 220px !important;
+    text-align: center;
+    /* border: 1px solid; */
+  }
+
+  .heading-container h2 {
+    color: #fff;
+    font-size: 20px !important;
+    font-weight: 500;
+    text-align: center;
+    width: 230px !important;
+    margin-top: 20px;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Medium Phone */
+@media screen and (max-width: 480px) {
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 0;
+  }
+
+  .heading-container h1 {
+    text-align: center;
+    /* border: 1px solid; */
+  }
+
+  .heading-container h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    /* border: 1px solid; */
+  }
 }
 
 /* Tentang Kami */
@@ -148,6 +246,7 @@ nav {
 
 .tentang-kami-text .left-text p {
   text-align: left;
+  text-shadow: 2px 2px #000;
 }
 
 .tentang-kami-text .right-text {
@@ -162,6 +261,7 @@ nav {
 .tentang-kami-text .right-text p {
   width: 280px;
   text-align: right;
+  text-shadow: 2px 2px #000;
   /* border: 1px solid; */
 }
 
@@ -175,6 +275,208 @@ nav {
 
 .bottom-text p {
   width: 500px;
+}
+
+/* Tentang Kami Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  .tentang-kami-container {
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
+  .tentang-kami-text {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0 !important;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text h3 {
+    text-align: center !important;
+    width: 240px !important;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text p {
+    text-align: center !important;
+    width: 200px !important;
+  }
+
+  .tentang-kami-text .right-text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin-top: 75px;
+    padding-right: 0 !important;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text h3 {
+    text-align: center !important;
+    width: 200px !important;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text p {
+    width: 200px !important;
+    text-align: center !important;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text {
+    margin-top: 80px;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text p {
+    width: 200px !important;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Medium Phone */
+@media screen and (max-width: 480px) {
+  .tentang-kami-container {
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+
+  .tentang-kami-text {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text {
+    width: 360px;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text h3 {
+    text-align: left;
+    width: 280px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .left-text p {
+    text-align: left;
+    width: 280px;
+    text-shadow: 2px 2px #000;
+  }
+
+  .tentang-kami-text .right-text {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 75px;
+    padding-right: 50px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text h3 {
+    text-align: right;
+    width: 280px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text p {
+    width: 280px;
+    text-align: right;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text {
+    margin-top: 80px;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text p {
+    width: 330px;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Large Phone or Phablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tentang-kami-container {
+    background-size: auto;
+    padding-bottom: 30px;
+  }
+
+  .tentang-kami-text {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 75px;
+    padding-right: 50px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text h3 {
+    text-align: right;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text p {
+    width: 280px;
+    text-align: right;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text {
+    margin-top: 100px;
+    /* border: 1px solid; */
+  }
+
+  .bottom-text p {
+    width: 400px;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Tablet */
+@media screen and (min-width: 769px) and (max-width: 991.5px) {
+  .tentang-kami-text .right-text {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 75px;
+    padding-right: 50px;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text h3 {
+    text-align: right;
+    /* border: 1px solid; */
+  }
+
+  .tentang-kami-text .right-text p {
+    width: 280px;
+    text-align: right;
+    /* border: 1px solid; */
+  }
 }
 
 /* Produk Kami */
@@ -203,6 +505,7 @@ nav {
 .produk-card-container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   /* border: 1px solid red; */
 }
@@ -252,6 +555,66 @@ nav {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+/* Produk Kami Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  .produk-card {
+    width: 240px;
+    height: 440px;
+  }
+
+  .produk-card p {
+    width: 200px;
+    height: 74px;
+    margin-top: 10px;
+    overflow: hidden;
+    /* border: 1px solid; */
+  }
+}
+
+/* Responsive for Medium Phone */
+@media screen and (max-width: 480px) {
+  .produk-kami-heading {
+    margin-bottom: 50px;
+    /* border: 1px solid; */
+  }
+  
+  .produk-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive for Large Phone or Phablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .produk-kami-heading {
+    margin-bottom: 30px;
+    /* border: 1px solid; */
+  }
+  
+  .produk-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Responsive for Tablet */
+@media screen and (min-width: 769px) and (max-width: 991.5px) {
+  .produk-kami-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* border: 1px solid; */
+  }
+  
+  .produk-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 
 /* Hubungi Kami */
 .hubungi-kami-container {
@@ -293,18 +656,29 @@ nav {
   color: #faac37;
   width: 200px;
 }
+/* Hubungi Kami Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  .text-and-button {
+    text-align: center;
+  }
+}
 
 footer {
   background-color: #000;
   width: 100%;
+  display: flex;
   padding-top: 70px;
   padding-bottom: 70px;
-  padding-left: 140px;
   /* border: 1px solid; */
 }
 
 .footer-content-container {
+  /* width: 1100px; */
   display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-left: 140px;
   /* border: 1px solid; */
 }
 
@@ -312,14 +686,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 80px;
   /* width: 350px; */
   /* border: 1px solid white; */
 }
 
+.footer-info a {
+  text-decoration: none;
+}
+
 .footer-info p {
   width: 220px;
-  /* border: 1px solid; */
   margin-top: 20px;
+  /* border: 1px solid; */
 }
 
 .footer-info h6 {
@@ -332,7 +711,8 @@ footer {
 .footer-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  margin-right: 80px;
+  /* padding-left: 80px; */
   /* border: 1px solid white; */
 }
 
@@ -347,7 +727,7 @@ footer {
 }
 
 .footer-socmed {
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 .socmed-icon {
@@ -370,4 +750,19 @@ footer {
 .footer-socmed :nth-child(3) {
   margin-top: 10px;
   /* border: 1px solid white  */
+}
+/* Footer Responsive */
+/* Responsive for Small Phone */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+  .footer-content-container {
+    padding-left: 8px !important;
+  }
+}
+
+
+/* Responsive for Medium Phone */
+@media screen and (max-width: 480px) {
+  .footer-content-container {
+    padding-left: 40px;
+  }
 }

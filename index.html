@@ -13,37 +13,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="nav-logo-container">
-        <h4><span class="red-text">Fragra</span>nesia</h4>
-      </div>
-      <div class="nav-link-container">
-        <div class="nav-link"><h4>Beranda</h4></div>
-        <div class="nav-link"><h4>Tentang Kami</h4></div>
-        <div class="nav-link"><h4>Produk</h4></div>
-      </div>
-    </nav>
-    <!-- End of Navbar -->
+    <div class="navbar-header-background">
+      <!-- Navbar -->
+      <nav>
+        <div class="nav-logo-container">
+          <h4><span class="red-text">Fragra</span>nesia</h4>
+        </div>
+        <div class="nav-link-container">
+          <div class="nav-link">
+            <a href="/index.html"><h4>Beranda</h4></a>
+          </div>
+          <div class="nav-link">
+            <a href="#tentang"><h4>Tentang Kami</h4></a>
+          </div>
+          <div class="nav-link">
+            <a href="#produk"><h4>Produk</h4></a>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
 
-    <!-- Header -->
-    <header>
-      <!-- Background -->
-      <img src="/assets/header-background.png" alt="header background" />
-
-      <div class="heading-container">
-        <h1>Selamat Datang di <span class="red-text">Fragra</span>nesia</h1>
-        <h2>Tingkatkan kepercayaan diri kalian dengan berbagai macam variasi aroma parfum Fragranesia!</h2>
-        <button>Lihat <span class="orange-text">Parfum</span></button>
-      </div>
-    </header>
-    <!-- End of Header -->
+      <!-- Header -->
+      <header>
+        <div class="heading-container">
+          <h1>Selamat Datang di <span class="red-text">Fragra</span>nesia</h1>
+          <h2>Tingkatkan kepercayaan diri kalian dengan berbagai macam variasi aroma parfum Fragranesia!</h2>
+          <button><a href="#produk"></a>Lihat <span class="orange-text">Parfum</span></button>
+        </div>
+      </header>
+      <!-- End of Header -->
+    </div>
 
     <!-- Tentang Kami -->
     <section class="tentang-kami-container">
-      <img src="/assets/tentang-kami-background.png" alt="Tentang Kami Background" class="tentang-kami-background" />
       <div class="tentang-kami-text">
-        <div class="left-text">
+        <div id="tentang" class="left-text">
           <h3>Siapa <span class="red-text">Kami</span></h3>
           <p>
             Fragranesia adalah sebuah tim bersemangat yang terdiri dari ahli parfum, peneliti aroma, dan pecinta seni aromaterapi. Kami telah menjalani perjalanan yang panjang untuk menggali rahasia aroma dan memahami bagaimana mereka dapat
@@ -69,8 +73,7 @@
 
     <!-- Produk Kami -->
     <section class="produk-kami-container">
-      <img src="/assets/produk-kami-background.png" alt="Produk Kami Background" class="produk-kami-background" />
-      <div class="produk-kami-heading">
+      <div id="produk" class="produk-kami-heading">
         <h1>Produk <span class="red-text">Kami</span></h1>
       </div>
       <div class="produk-card-container">
@@ -78,7 +81,7 @@
           <img src="/assets/produk-aquatic.png" alt="Produk Aquatic" />
           <h3 class="top-heading">Aquatic</h3>
           <p>Aroma segar dan bersih yang terinspirasi oleh air dan laut</p>
-          <h3 class="bottom-heading">100ml</h3>
+          <h3 class="bottom-heading">30ml</h3>
         </div>
         <div class="produk-card">
           <img src="/assets/produk-extrait.png" alt="Produk Aquatic" />
@@ -98,7 +101,6 @@
 
     <!-- Hubungi Kami -->
     <section class="hubungi-kami-container">
-      <img src="/assets/hubungi-kami-background.png" alt="Contact Us Background" class="hubungi-kami-background" />
       <div class="text-and-button">
         <h1>Info Detail Pemesanan</h1>
         <button>Hubungi Kami</button>
@@ -115,8 +117,8 @@
         </div>
         <div class="footer-nav">
           <a href="/index.html">Beranda</a>
-          <a href="/index.html">Tentang Kami</a>
-          <a href="/index.html">Produk</a>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#produk">Produk</a>
         </div>
         <div class="footer-socmed">
           <h6>Connect with Us</h6>

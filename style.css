@@ -13,8 +13,6 @@
   color: #faac37;
 }
 
-/* background-image: url("assets/header-background.png"); */
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -50,33 +48,44 @@ nav {
   /* border: 1px solid; */
 }
 
-.nav-link h4 {
+.nav-link a {
+  text-decoration: none;
+}
+
+.nav-link a h4 {
   font-size: 15px;
   font-weight: 200;
   margin-left: 20px;
   /* border: 1px solid; */
 }
 
+.navbar-header-background {
+  background-image: url("assets/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+  /* border: 1px solid red; */
+}
+
 /* Header */
 header {
   /* width: 100%; */
-  margin-bottom: 397px;
-  border: 1px solid;
+  /* margin-bottom: -360px; */
+  /* padding-bottom: 1130px; */
+  /* border: 1px solid; */
 }
 
-header img {
+/* header img {
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: 0;
-  top: 0;
-  left: 0;
-}
+  bottom: 350px;
+  left: -2px;
+} */
 
 .heading-container {
-  position: relative;
-  z-index: 1;
+  padding-top: 160px;
   padding-left: 80px;
-  padding-top: 60px;
 }
 
 .heading-container h1 {
@@ -88,8 +97,8 @@ header img {
   font-size: 25px;
   font-weight: 500;
   width: 400px;
+  margin-top: 20px;
   box-shadow: 0px 4px 4px 0px #00000040 inset;
-
   /* border: 1px solid; */
 }
 
@@ -101,28 +110,25 @@ button {
   text-align: center;
   width: 250px;
   position: relative;
+  margin-top: 30px;
+  cursor: pointer;
   border-radius: 25px;
 }
 
 /* Tentang Kami */
 .tentang-kami-container {
-  width: 100%;
-  /* margin-bottom: 30px; */
-}
-
-.tentang-kami-background {
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  left: 0;
+  background-image: url("assets/tentang-kami-background2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  border: none;
 }
 
 .tentang-kami-text {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
   /* border: 1px solid; */
 }
 
@@ -142,7 +148,7 @@ button {
 .tentang-kami-text .left-text {
   width: 380px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 50px;
   /* border: 1px solid; */
 }
 
@@ -152,12 +158,11 @@ button {
 
 .tentang-kami-text .right-text {
   width: 380px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 100px;
-  padding-right: 20px;
+  margin-top: 75px;
+  padding-right: 50px;
 }
 
 .tentang-kami-text .right-text p {
@@ -170,9 +175,7 @@ button {
   text-align: center;
   display: flex;
   justify-content: center;
-  position: relative;
-  z-index: 1;
-  margin-top: 260px;
+  margin-top: 170px;
   /* border: 1px solid; */
 }
 
@@ -182,21 +185,19 @@ button {
 
 /* Produk Kami */
 .produk-kami-container {
-  width: 100%;
-}
-
-.produk-kami-background {
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  left: 0;
+  background-image: url("assets/produk-kami-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  /* height: 1024px; */
 }
 
 .produk-kami-heading {
-  position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  /* border: 1px solid; */
 }
 
 .produk-kami-heading h1 {
@@ -209,31 +210,34 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
+  /* border: 1px solid red; */
 }
 
 .produk-card {
-  position: relative;
   background-color: #f9f6f61f;
   width: 280px;
-  height: 400px;
+  height: 440px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   /* border: 1px solid white; */
 }
 
 .produk-card img {
   width: 100%;
-  border: 1px solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* border: 1px solid; */
 }
 
 .produk-card h3,
 .produk-card p {
   color: #fff;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
   /* border: 1px solid; */
 }
 
@@ -243,7 +247,9 @@ button {
 
 .produk-card p {
   width: 250px;
+  height: 74px;
   margin-top: 10px;
+  overflow: hidden;
   /* border: 1px solid; */
 }
 
@@ -254,17 +260,13 @@ button {
 
 /* Hubungi Kami */
 .hubungi-kami-container {
-  width: 100%;
-}
-
-.hubungi-kami-background {
-  width: 100%;
-  position: absolute;
-  left: 0;
+  background-image: url("assets/hubungi-kami-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
 }
 
 .text-and-button {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,7 +275,6 @@ button {
 }
 
 .text-and-button h1 {
-  position: relative;
   color: #fff;
   font-size: 30px;
   font-weight: 300;
@@ -291,9 +292,6 @@ button {
 footer {
   background-color: #000;
   width: 100%;
-  position: relative;
-  z-index: 1;
-  top: 115px;
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 140px;

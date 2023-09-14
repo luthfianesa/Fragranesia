@@ -133,7 +133,8 @@ nav {
   font-weight: 500;
   width: 400px;
   margin-top: 20px;
-  text-shadow: 2px 2px #000;
+  text-shadow: -3px 4px #000;
+  /* -webkit-text-stroke: 1px #000; */
   /* Figma */
   /* box-shadow: 0px 4px 4px 0px #00000040 inset; */
   /* border: 1px solid; */
@@ -578,7 +579,7 @@ nav {
     margin-bottom: 50px;
     /* border: 1px solid; */
   }
-  
+
   .produk-card {
     margin-bottom: 30px;
   }
@@ -590,7 +591,7 @@ nav {
     margin-bottom: 30px;
     /* border: 1px solid; */
   }
-  
+
   .produk-card {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -607,7 +608,7 @@ nav {
     margin-bottom: 30px;
     /* border: 1px solid; */
   }
-  
+
   .produk-card {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -759,10 +760,19 @@ footer {
   }
 }
 
-
 /* Responsive for Medium Phone */
 @media screen and (max-width: 480px) {
   .footer-content-container {
     padding-left: 40px;
+  }
+
+  .footer-nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-socmed {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
